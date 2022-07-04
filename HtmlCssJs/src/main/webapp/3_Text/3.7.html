@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>표 만들기</title>
+</head>
+<body>
+	
+	<p>표(table)는 웹 페이지에서 흔하게 볼 수 있는 , 2차원 격자 형태로 구성된 데이터를 의미합니다.<br>
+	표는 행(row) 과 열 (column) 그리고 행과열이 만나는 셀(cell) 로 구성됩니다.</p>	
+	
+	<h1>테이블 태그</h1>
+	
+	 <  table  >   <   / table  > 
+
+	<h1>caption 태그</h1>
+	<p>HTML 에서 표를 생성할 때 웹 접근성을 향상하는 방법중 하나로 표제목을 지정합니다.
+	표 제목은 CAPTION 태그로 지정하므로 표를 만들때는 반드시 caption 태그를 사용해야 합니다.
+	caption태그는 이후에배울 표 관련 태그중에서 table 태그 안에 첫번째로 작성해야 하는 태그입니다.</p>
+	
+	<h1>tr태그</h1>
+	<p>tr(table row) 태그는 표에서 행을 생성합니다.</p>
+	
+	<h1>th,td 태그</h1>
+	<p>th(table header) 태그와 td(table data) 태그는 표에서 열을 생성할때 사용합니다.<br>
+	th태그 표에서 제목을 나타내는 열을 생성할 때 , td태그는 표에서 일반적인 데이터를 나타내는 열을 생성합니다</p>
+	
+	<h1>rowspan 과 colspan 속성</h1>
+	<p> 셀 병합시에 행과행을 병합할때는 rowspan 속성을 , 열과 열을 병합할 때는 colspan 속성을 사용합니다.
+	</p>
+	
+	<table border="1">
+		<tr>
+			<th>번호</th>
+			<th>상품명</th>
+			<th>수량</th>
+			<th>가격</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>콜라</td>
+			<td>1개</td>
+			<td>1500원</td>
+		</tr>	
+		<tr>
+			<td>2</td>
+			<td>사이다</td>
+			<td>2개</td>
+			<td rowspan="2">1000원</td><!-- 행 병합 -->
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>탄산수</td>
+			<td>3개</td>
+		</tr>
+		<tr>
+			<td>총금액</td>
+			<td colspan="3">6500원</td><!-- 열 병합 -->
+		</tr>
+	</table>
+	
+	<h1>thead,tfoot,tbody 태그</h1>	
+	
+	<h1>col과 colgroup 태그</h1>
+	
+	<h1>scope 속성</h1>
+	
+	
+</body>
+</html>
